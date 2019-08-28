@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="score"></div>
+
+		<div id="settings">
+			SPACE To Pause<br><br>
+			<label class="container">Speed: <div class="input"><input type="number" value="" id="baseSpeed" onblur="input('baseSpeed')"></div></label><br>
+			<label class="container">Acceleration: <div class="input"><input type="number" value="" id="acceleration" onblur="input('acceleration')"></div></label><br>
+			<label class="container">Speed Limit: <div class="input"><input type="number" value="" id="speedLimit" onblur="input('speedLimit')"></div></label><br><br>
+			Left<br>
+			<label class="containerText">Up: <div class="inputText"><input type="text" value="w" id="leftUp" onblur="inputText('leftUp')"></div></label><br>
+			<label class="containerText">Left: <div class="inputText"><input type="text" value="a" id="leftLeft" onblur="inputText('leftLeft')"></div></label><br>
+			<label class="containerText">Down: <div class="inputText"><input type="text" value="s" id="leftDown" onblur="inputText('leftDown')"></div></label><br>
+			<label class="containerText">Right: <div class="inputText"><input type="text" value="d" id="leftRight" onblur="inputText('leftRight')"></div></label><br><br>
+			Right<br>
+			<label class="containerText">Up: <div class="inputText"><input type="text" value="i" id="rightUp" onblur="inputText('rightUp')"></div></label><br>
+			<label class="containerText">Right: <div class="inputText"><input type="text" value="j" id="rightLeft" onblur="inputText('rightLeft')"></div></label><br>
+			<label class="containerText">Down: <div class="inputText"><input type="text" value="k" id="rightDown" onblur="inputText('rightDown')"></div></label><br>
+			<label class="containerText">Right: <div class="inputText"><input type="text" value="l" id="rightRight" onblur="inputText('rightRight')"></div></label><br>
+		</div>
+
+		<canvas id="canvas"></canvas>
+	</body>
+	<script src="script.js"></script>
+	<script src="input.js"></script>
+</html>
