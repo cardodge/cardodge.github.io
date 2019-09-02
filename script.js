@@ -29,6 +29,7 @@ function frame(){
 	document.getElementById("baseSpeed").value = Math.round(speed*10)/10;
 	document.getElementById("acceleration").value = Math.round(acceleration*10)/10;
 	document.getElementById("speedLimit").value = Math.round(speedLimit*10)/10;
+	document.getElementById("directionSpawnRate").value = Math.round(directionSpawnRate*10)/10;
 	//color();
 	collision();
 	move();
